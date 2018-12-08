@@ -3,7 +3,26 @@
   margin: 20px;
   padding: 20px;
   background-color: #ffffff;
+  width: 80%;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  
+}
+.List {
+  display: flex;
+  flex-direction: row;
+}
 
+.ParticipantsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.PlacesList {
+  display: flex;
+  flex-direction: row;
+}
 
