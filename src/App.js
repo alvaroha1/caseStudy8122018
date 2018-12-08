@@ -43,21 +43,28 @@ class App extends Component {
     .then(console.log(this.state))
   }
 
+  addParticipant = (event) => {
+
+  }
+
   render() {
     return (
       <div className="App">
-      <div className="Title"><h1>Lunch Place</h1></div>
+        <div className="Title">
+          <h1>Lunch Place</h1>
+        </div>
+      
       <div className="main">
-        <SearchPlace></SearchPlace>
-        <div classNames="List">
+        <SearchPlace />
+        <div className="mainLists">
           <div className="ParticipantsList">
-            <ListParticipants></ListParticipants>
+            <ListParticipants participants={this.state.participants} />
           </div>
           <div className="PlacesList">
-            <ListPlaces></ListPlaces>
+            <ListPlaces />
           </div>
         </div>
-        <AddParticipant></AddParticipant>
+        <AddParticipant />
       </div>
       </div>
     );
