@@ -26,7 +26,12 @@ class App extends Component {
     super(props);
     this.state = {
       places: [],
-      participants: [],
+      participants: [
+        { name: "Max Mustermann"},
+        { name: "Kevin Müller"},
+        { name: "Dennis Mustermann"},
+        { name: "Donald Trump"},
+      ],
     };
     this.fetchPlaces();
   };

@@ -7,10 +7,10 @@ class ListParticipants extends React.Component {
     return (
         <div className="card border-dark mb-3">
         <h4>Participants</h4>
-          <Participant></Participant>
-          <Participant></Participant>
-          <Participant></Participant>
-          <Participant></Participant>
+          <Participant name="Max Mustermann"></Participant>
+          <Participant name="Kevin Müller"></Participant>
+          <Participant name="Dennis Mustermann"></Participant>
+          <Participant name="Donald Trump"></Participant>
           <NewParticipant></NewParticipant>
         </div>
     );
