@@ -25,7 +25,20 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      places: [],
+      places: [
+        { name: "name1",
+          url: "url1",
+          rating: "1",
+        },
+        { name: "name2",
+        url: "url2",
+        rating: "1",
+        },
+        { name: "name3",
+        url: "url3",
+        rating: "1",
+        },
+      ],
       participants: [
         { name: "Max Mustermann"},
         { name: "Kevin Müller"},
@@ -33,7 +46,7 @@ class App extends Component {
         { name: "Donald Trump"},
       ],
     };
-    this.fetchPlaces();
+    // this.fetchPlaces();
   };
 
   fetchPlaces = () => {
@@ -65,10 +78,10 @@ class App extends Component {
             <ListParticipants participants={this.state.participants} />
           </div>
           <div className="PlacesList">
-            <ListPlaces />
+            <ListPlaces places={this.state.places} />
           </div>
         </div>
-        <AddParticipant addParticipant={this.addParticipant}/>
+        <AddParticipant addParticipant={this.addParticipant} />
       </div>
       </div>
     );

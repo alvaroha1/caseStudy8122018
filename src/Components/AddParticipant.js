@@ -23,12 +23,12 @@ class AddParticipant extends React.Component {
           <div className="card-body text-dark">
           <input 
               type="text" 
-              class="form-control" 
+              className="form-control" 
               placeholder="Type here"
               onChange={this.onHandle} 
               ></input>
               <button 
-                class="btn btn-primary" 
+                className="btn btn-primary" 
                 type="button" 
                 id="button-addon2"
                 onClick={this.createParticipant}>Add Participant</button>

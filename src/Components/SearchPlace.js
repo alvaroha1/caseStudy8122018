@@ -6,16 +6,16 @@ class SearchPlace extends React.Component {
     return (
         <div className="card border-dark mb-3">
           <div className="card-body text-dark">
-          <div class="input-group mb-3">
+          <div className="input-group mb-3">
             <input 
               type="text" 
-              class="form-control" 
+              className="form-control" 
               placeholder="10999 Berlin" 
               aria-label="10999 Berlin" 
               aria-describedby="button-addon2"></input>
-            <div class="input-group-append">
+            <div className="input-group-append">
               <button 
-                class="btn btn-primary" 
+                className="btn btn-primary" 
                 type="button" 
                 id="button-addon2">Search</button>
             </div>
