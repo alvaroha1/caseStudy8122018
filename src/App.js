@@ -44,8 +44,11 @@ class App extends Component {
   }
 
   addParticipant = (event) => {
-    console.log(this.state)
-
+    const newstate = {
+      ...this.state,
+    }
+    newstate.participants.push(event);
+    this.setState({newstate});
   }
 
   render() {
