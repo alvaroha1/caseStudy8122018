@@ -44,6 +44,7 @@ class App extends Component {
   }
 
   addParticipant = (event) => {
+    console.log(this.state)
 
   }
 
@@ -64,7 +65,7 @@ class App extends Component {
             <ListPlaces />
           </div>
         </div>
-        <AddParticipant />
+        <AddParticipant addParticipant={this.addParticipant}/>
       </div>
       </div>
     );

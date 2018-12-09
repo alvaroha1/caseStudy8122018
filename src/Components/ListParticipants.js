@@ -1,16 +1,17 @@
 import React from 'react';
 import Participant from './Participant';
-import NewParticipant from './NewParticipant';
+import '../Styles/ListParticipants.css';
 
 class ListParticipants extends React.Component {
   render() {
     return (
-      <div className="card border-dark mb-3">
+      <div className="list card border-dark mb-3">
           <h4>Participants</h4>
-            {this.props.participants.map (participant => {
+            {this.props.participants && this.props.participants.length > 0 
+            ? this.props.participants.map (participant => {
               return <Participant name={participant.name}/>
-            })}
-            <NewParticipant></NewParticipant>
+            }) 
+            : <h5><p>Please add a new Participant</p></h5> }
       </div>
     );
   } 
